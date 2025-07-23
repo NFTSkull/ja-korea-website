@@ -1,188 +1,168 @@
 # J&A KOREA S.A. de C.V. - Sitio Web Corporativo
 
-## Descripción
+## 🏢 Descripción del Proyecto
 
-Sitio web profesional y moderno para J&A KOREA S.A. de C.V., empresa mexicana especializada en soluciones industriales integrales. El sitio está diseñado con un enfoque corporativo y responsivo, optimizado para empresas del sector industrial.
+Sitio web profesional y moderno para **J&A KOREA S.A. de C.V.**, una empresa mexicana de servicios industriales. El sitio presenta una experiencia de usuario espectacular con animaciones avanzadas y diseño responsivo.
 
-## Características
+## ✨ Características Principales
 
-### 🎨 Diseño
-- **Paleta de colores corporativa**: Azul acero, gris oscuro, blanco y acentos metálicos
-- **Diseño responsivo**: Optimizado para escritorio, tablet y móvil
-- **Tipografía moderna**: Inter font family para mejor legibilidad
-- **Efectos visuales**: Animaciones suaves y transiciones elegantes
+### 🎨 Diseño y UX
+- **Diseño moderno y profesional** con paleta de colores corporativa (gris y amarillo)
+- **Animaciones espectaculares** con efectos de entrada y hover
+- **Diseño completamente responsivo** optimizado para móvil, tablet y desktop
+- **Interfaz intuitiva** con navegación fluida
 
-### 📱 Funcionalidades
-- **Navegación suave**: Scroll automático a secciones
-- **Menú móvil**: Navegación hamburger para dispositivos móviles
-- **Formulario de contacto**: Con validación en tiempo real
-- **Animaciones**: Efectos de entrada y hover
-- **Contadores animados**: Para estadísticas de la empresa
-- **Notificaciones**: Sistema de alertas para el usuario
+### 🚀 Sección de Servicios Espectacular
+- **Header impactante** con estadísticas animadas
+- **Elementos flotantes** con iconos animados
+- **Modal interactivo** con detalles completos de servicios
+- **Efectos visuales avanzados** y partículas dinámicas
+- **Optimización móvil** con diseño elegante y funcional
 
-### 🏗️ Estructura del Sitio
+### 📱 Optimización Móvil
+- **Diseño adaptativo** que se ve perfecto en cualquier dispositivo
+- **Animaciones optimizadas** para rendimiento móvil
+- **Elementos táctiles** con targets de tamaño apropiado
+- **Tipografía escalable** que mantiene legibilidad
 
-#### 1. **Inicio (Hero Section)**
-- Banner principal con gradiente industrial
-- Frase destacada corporativa
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5** - Estructura semántica moderna
+- **CSS3** - Estilos avanzados con animaciones y efectos
+- **JavaScript ES6+** - Funcionalidades interactivas y animaciones
+- **Font Awesome** - Iconografía profesional
+- **Google Fonts** - Tipografía optimizada
+
+## 📁 Estructura del Proyecto
+
+```
+J&A KOREA S.A. de C.V./
+├── index.html          # Página principal
+├── styles.css          # Estilos y animaciones
+├── script.js           # Funcionalidades JavaScript
+├── .gitignore          # Archivos excluidos de Git
+├── README.md           # Documentación del proyecto
+└── assets/             # Imágenes y recursos
+    ├── Logo Fondo.png
+    ├── Hero.png
+    ├── Electrico.png
+    ├── Montacargas.png
+    └── ... (otras imágenes)
+```
+
+## 🚀 Instalación y Uso
+
+### Requisitos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Servidor web local (opcional para desarrollo)
+
+### Instalación Local
+1. Clona el repositorio:
+   ```bash
+   git clone [URL_DEL_REPOSITORIO]
+   ```
+
+2. Abre el archivo `index.html` en tu navegador
+
+3. Para desarrollo local con servidor:
+   ```bash
+   python3 -m http.server 8000
+   # Luego visita http://localhost:8000
+   ```
+
+## 🎯 Secciones del Sitio
+
+### 🏠 Inicio (Hero)
+- Título principal con animaciones
+- Descripción de la empresa
 - Botones de llamada a la acción
-- Efectos de parallax y grid pattern
 
-#### 2. **Nosotros**
-- Historia de la empresa
-- Misión, visión y valores
-- Estadísticas destacadas
+### 👥 Nosotros
+- Información corporativa
+- Valores de la empresa
+- Estadísticas animadas
 - Zonas de operación
 
-#### 3. **Servicios**
-- Mantenimiento industrial (preventivo y correctivo)
-- Obra civil (construcción, urbanización)
-- Electromecánica (instalaciones, automatización)
-- Estructuras metálicas (fabricación, montaje)
-- Proyectos internacionales
+### 🛠️ Servicios
+- **Estructuras Metálicas**
+- **Montacargas** (Renta, Venta y Maniobras)
+- **Plataformas Genie**
+- **Mantenimiento Industrial**
+- **Obra Civil**
+- **Electromecánica**
+- **Mantenimiento Especializado**
+- **Servicios Globales**
+- **Reclutamiento Industrial**
 
-#### 4. **Venta y Renta de Equipos**
-- Montacargas de diferentes capacidades
-- Plataformas Genius
-- Equipos especializados
-- Especificaciones técnicas
-
-#### 5. **Proyectos**
-- Galería de proyectos destacados
-- Descripciones profesionales
-- Etiquetas por categoría
-
-#### 6. **Contacto**
-- Formulario de contacto completo
+### 📞 Contacto
 - Información de contacto
-- Mapa de ubicación
-- Enlaces a WhatsApp y teléfono
+- Formulario de contacto
+- Ubicaciones de la empresa
 
-#### 7. **Footer**
-- Menú rápido
-- Redes sociales
-- Enlaces legales
-- Información de contacto
+## 🎨 Paleta de Colores
 
-## Tecnologías Utilizadas
+- **Gris Principal**: `#374151` (Textos principales)
+- **Gris Claro**: `#C7C7C7` (Fondos y bordes)
+- **Amarillo Corporativo**: `#F59E0B` (Acentos y CTAs)
+- **Blanco**: `#FFFFFF` (Fondos principales)
+- **Negro**: `#000000` (Textos sobre blanco)
 
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Estilos modernos con variables CSS y Grid/Flexbox
-- **JavaScript ES6+**: Funcionalidades interactivas
-- **Font Awesome**: Iconografía profesional
-- **Google Fonts**: Tipografía Inter
+## 📱 Responsive Design
 
-## Características Técnicas
+### Breakpoints
+- **Desktop**: > 768px
+- **Tablet**: 768px - 480px
+- **Mobile**: < 480px
 
-### Responsive Design
-- Mobile-first approach
-- Breakpoints optimizados
-- Navegación adaptativa
+### Optimizaciones Móviles
+- **Navegación hamburguesa** para móviles
+- **Elementos táctiles** con tamaño mínimo de 44px
+- **Tipografía escalable** con clamp()
+- **Animaciones optimizadas** para rendimiento
 
-### Performance
-- Código optimizado
-- Lazy loading preparado
-- Animaciones eficientes
+## 🚀 Despliegue
 
-### Accesibilidad
-- Navegación por teclado
-- Contraste adecuado
-- Estructura semántica
+### Vercel (Recomendado)
+1. Conecta tu repositorio de GitHub a Vercel
+2. Vercel detectará automáticamente que es un sitio estático
+3. El sitio se desplegará automáticamente en cada push
 
-### SEO
-- Meta tags optimizados
-- Estructura de datos
-- URLs amigables
+### Otros Servicios
+- **Netlify**: Similar a Vercel
+- **GitHub Pages**: Gratuito para repositorios públicos
+- **Firebase Hosting**: Servicio de Google
 
-## Instalación y Uso
+## 🔧 Personalización
 
-1. **Clonar o descargar** los archivos del proyecto
-2. **Abrir** `index.html` en un navegador web
-3. **Personalizar** contenido según necesidades específicas
-
-### Estructura de Archivos
-```
-/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── script.js           # Funcionalidades JavaScript
-└── README.md           # Documentación
-```
-
-## Personalización
-
-### Colores
-Los colores se pueden modificar en las variables CSS del archivo `styles.css`:
-
+### Cambiar Colores
+Edita las variables CSS en `styles.css`:
 ```css
 :root {
-    --primary-color: #4A5568;    /* Azul acero */
-    --secondary-color: #2D3748;  /* Gris oscuro */
-    --accent-color: #718096;     /* Acento metálico */
-    /* ... más variables */
+    --accent-color: #F59E0B;
+    --accent-yellow: #F59E0B;
+    --text-primary: #374151;
+    --text-secondary: #6B7280;
+    --light-gray: #C7C7C7;
+    --white: #FFFFFF;
+    --black: #000000;
 }
 ```
 
-### Contenido
-- Editar texto en `index.html`
-- Actualizar información de contacto
-- Agregar imágenes reales de proyectos
-- Personalizar servicios según necesidades
+### Agregar Nuevos Servicios
+1. Agrega la nueva tarjeta en `index.html`
+2. Incluye los datos en el modal en `script.js`
+3. Personaliza los estilos en `styles.css`
 
-### Funcionalidades
-- Modificar validaciones en `script.js`
-- Agregar integración con backend
-- Personalizar animaciones
-- Configurar analytics
+## 📞 Soporte
 
-## Características Destacadas
+Para soporte técnico o consultas sobre el proyecto:
+- **Email**: [tu-email@ejemplo.com]
+- **GitHub**: [URL_DEL_REPOSITORIO]
 
-### 🎯 Enfoque Empresarial
-- Diseño profesional y serio
-- Contenido orientado a B2B
-- Llamadas a la acción claras
+## 📄 Licencia
 
-### 🏭 Sector Industrial
-- Iconografía industrial
-- Terminología técnica apropiada
-- Enfoque en soluciones integrales
-
-### 📍 Localización
-- Ubicaciones específicas (Apodaca y Pesquería, N.L.)
-- Información de contacto mexicana
-- Contenido en español
-
-### 🌐 Expansión Internacional
-- Sección dedicada a proyectos internacionales
-- Enfoque en estándares globales
-- Preparado para crecimiento
-
-## Optimizaciones Futuras
-
-### Backend Integration
-- Formulario de contacto funcional
-- Sistema de gestión de contenido
-- Base de datos de proyectos
-
-### Contenido Dinámico
-- Galería de imágenes reales
-- Blog de noticias industriales
-- Testimonios de clientes
-
-### Funcionalidades Avanzadas
-- Chat en vivo
-- Calculadora de cotizaciones
-- Sistema de seguimiento de proyectos
-
-## Soporte
-
-Para consultas sobre el sitio web o personalizaciones adicionales, contactar a través de:
-
-- **Email**: contacto@jakorea.com.mx
-- **Teléfono**: +52 81 1234 5678
-- **WhatsApp**: +52 81 1234 5678
+Este proyecto es propiedad de J&A KOREA S.A. de C.V.
 
 ---
 
-**J&A KOREA S.A. de C.V.** - Soluciones Industriales Integrales
-*Apodaca y Pesquería, Nuevo León, México* 
+**Desarrollado con ❤️ para J&A KOREA S.A. de C.V.** 
