@@ -833,7 +833,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'projects_development': 'Projects in development',
             
             // Services
-            'services_title': 'Our Services',
+            'services_title': 'OUR Services',
             'services_subtitle': 'Comprehensive solutions for all your industrial needs',
             'specialized_services': 'Specialized Services',
             'completed_projects': 'Projects Completed',
