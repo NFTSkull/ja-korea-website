@@ -604,4 +604,198 @@ document.addEventListener('DOMContentLoaded', function() {
     window.showServiceDetails = showServiceDetails;
     window.closeServiceModal = closeServiceModal;
     window.contactService = contactService;
+    
+    // ===== FUNCIONALIDAD DE CAMBIO DE IDIOMA =====
+    
+    // Diccionario de traducciones
+    const translations = {
+        es: {
+            // Navegación
+            'inicio': 'Inicio',
+            'nosotros': 'Nosotros',
+            'servicios': 'Servicios',
+            'equipos': 'Equipos',
+            'contacto': 'Contacto',
+            
+            // Hero
+            'hero_title_1': 'Servicios integrales',
+            'hero_title_2': 'en el estado de',
+            'hero_title_3': 'Nuevo León',
+            'hero_subtitle_1': 'en todo',
+            'hero_subtitle_2': 'México y el extranjero',
+            'hero_description': 'Especialistas en fabricación e instalación de estructuras metálicas, conveyors, mantenimiento industrial, servicios de ingeniería, renta y venta de maquinaria pesada y maniobras.',
+            
+            // Botones
+            'cotiza_con_nosotros': 'Cotiza con nosotros',
+            'conoce_nuestros_servicios': 'Conoce nuestros servicios',
+            
+            // Secciones
+            'about_title': 'Nosotros',
+            'about_subtitle': 'Conoce nuestra historia y compromiso con la excelencia industrial',
+            'about_history': 'Nuestra Historia',
+            'about_mission': 'Misión',
+            'about_vision': 'Visión',
+            'about_values': 'Valores',
+            
+            // Servicios
+            'services_title': 'Nuestros Servicios',
+            'services_subtitle': 'Soluciones integrales para todas tus necesidades industriales',
+            
+            // Footer
+            'copyright': 'Todos los derechos reservados.',
+            'privacy': 'Aviso de Privacidad',
+            'terms': 'Términos y Condiciones'
+        },
+        en: {
+            // Navigation
+            'inicio': 'Home',
+            'nosotros': 'About',
+            'servicios': 'Services',
+            'equipos': 'Equipment',
+            'contacto': 'Contact',
+            
+            // Hero
+            'hero_title_1': 'Comprehensive Services',
+            'hero_title_2': 'in the state of',
+            'hero_title_3': 'Nuevo León',
+            'hero_subtitle_1': 'throughout',
+            'hero_subtitle_2': 'Mexico and abroad',
+            'hero_description': 'Specialists in manufacturing and installation of metal structures, conveyors, industrial maintenance, engineering services, rental and sale of heavy machinery and maneuvers.',
+            
+            // Buttons
+            'cotiza_con_nosotros': 'Get Quote',
+            'conoce_nuestros_servicios': 'Learn about our services',
+            
+            // Sections
+            'about_title': 'About Us',
+            'about_subtitle': 'Learn about our history and commitment to industrial excellence',
+            'about_history': 'Our History',
+            'about_mission': 'Mission',
+            'about_vision': 'Vision',
+            'about_values': 'Values',
+            
+            // Services
+            'services_title': 'Our Services',
+            'services_subtitle': 'Comprehensive solutions for all your industrial needs',
+            
+            // Footer
+            'copyright': 'All rights reserved.',
+            'privacy': 'Privacy Policy',
+            'terms': 'Terms and Conditions'
+        },
+        ko: {
+            // 네비게이션
+            'inicio': '홈',
+            'nosotros': '회사소개',
+            'servicios': '서비스',
+            'equipos': '장비',
+            'contacto': '연락처',
+            
+            // 히어로
+            'hero_title_1': '종합 서비스',
+            'hero_title_2': '누에보 레온 주에서',
+            'hero_title_3': '누에보 레온',
+            'hero_subtitle_1': '멕시코 전역과',
+            'hero_subtitle_2': '해외에서',
+            'hero_description': '금속 구조물 제조 및 설치, 컨베이어, 산업 유지보수, 엔지니어링 서비스, 중장비 임대 및 판매, 기동 작업 전문가.',
+            
+            // 버튼
+            'cotiza_con_nosotros': '견적 요청',
+            'conoce_nuestros_servicios': '서비스 알아보기',
+            
+            // 섹션
+            'about_title': '회사소개',
+            'about_subtitle': '우리의 역사와 산업 우수성에 대한 약속을 알아보세요',
+            'about_history': '우리의 역사',
+            'about_mission': '미션',
+            'about_vision': '비전',
+            'about_values': '가치',
+            
+            // 서비스
+            'services_title': '우리의 서비스',
+            'services_subtitle': '모든 산업적 요구에 대한 종합 솔루션',
+            
+            // 푸터
+            'copyright': '모든 권리 보유.',
+            'privacy': '개인정보처리방침',
+            'terms': '이용약관'
+        }
+    };
+    
+    // Función para cambiar idioma
+    function changeLanguage(lang) {
+        const elements = document.querySelectorAll('[data-lang]');
+        
+        elements.forEach(element => {
+            const key = element.getAttribute('data-lang');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+        
+        // Actualizar elementos específicos
+        updateSpecificElements(lang);
+        
+        // Guardar preferencia de idioma
+        localStorage.setItem('preferredLanguage', lang);
+    }
+    
+    // Función para actualizar elementos específicos
+    function updateSpecificElements(lang) {
+        const currentLang = translations[lang];
+        if (!currentLang) return;
+        
+        // Actualizar elementos del hero
+        const heroTitle1 = document.querySelector('.hero-title-primary');
+        const heroTitle2 = document.querySelector('.hero-title-secondary');
+        const heroTitle3 = document.querySelector('.hero-title-accent');
+        const heroSubtitle1 = document.querySelector('.hero-subtitle-main');
+        const heroSubtitle2 = document.querySelector('.hero-subtitle-accent');
+        const heroDescription = document.querySelector('.hero-description-main');
+        
+        if (heroTitle1) heroTitle1.textContent = currentLang.hero_title_1;
+        if (heroTitle2) heroTitle2.textContent = currentLang.hero_title_2;
+        if (heroTitle3) heroTitle3.textContent = currentLang.hero_title_3;
+        if (heroSubtitle1) heroSubtitle1.textContent = currentLang.hero_subtitle_1;
+        if (heroSubtitle2) heroSubtitle2.textContent = currentLang.hero_subtitle_2;
+        if (heroDescription) heroDescription.textContent = currentLang.hero_description;
+        
+        // Actualizar botones del hero
+        const btnPrimary = document.querySelector('.btn-primary .btn-text');
+        const btnSecondary = document.querySelector('.btn-secondary .btn-text');
+        
+        if (btnPrimary) btnPrimary.textContent = currentLang.cotiza_con_nosotros;
+        if (btnSecondary) btnSecondary.textContent = currentLang.conoce_nuestros_servicios;
+        
+        // Actualizar títulos de secciones
+        const aboutTitle = document.querySelector('#nosotros .section-header h2');
+        const aboutSubtitle = document.querySelector('#nosotros .section-header p');
+        const servicesTitle = document.querySelector('#servicios .services-main-title .services-title-line');
+        const servicesSubtitle = document.querySelector('#servicios .services-description');
+        
+        if (aboutTitle) aboutTitle.textContent = currentLang.about_title;
+        if (aboutSubtitle) aboutSubtitle.textContent = currentLang.about_subtitle;
+        if (servicesTitle) servicesTitle.textContent = currentLang.services_title.split(' ')[0];
+        if (servicesSubtitle) servicesSubtitle.textContent = currentLang.services_subtitle;
+        
+        // Actualizar footer
+        const copyright = document.querySelector('.footer-bottom p');
+        if (copyright) {
+            copyright.innerHTML = `&copy; 2023 J&A KOREA S.A. de C.V. ${currentLang.copyright}`;
+        }
+        
+        const privacyLink = document.querySelector('.footer-links a:first-child');
+        const termsLink = document.querySelector('.footer-links a:last-child');
+        
+        if (privacyLink) privacyLink.textContent = currentLang.privacy;
+        if (termsLink) termsLink.textContent = currentLang.terms;
+    }
+    
+    // Cargar idioma preferido al cargar la página
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'es';
+    document.getElementById('languageSelect').value = savedLanguage;
+    changeLanguage(savedLanguage);
+    
+    // Hacer función global
+    window.changeLanguage = changeLanguage;
 }); 
