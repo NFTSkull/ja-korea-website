@@ -777,7 +777,19 @@ document.addEventListener('DOMContentLoaded', function() {
             'copyright': 'Todos los derechos reservados.',
             'privacy': 'Aviso de Privacidad',
             'terms': 'Términos y Condiciones',
-            'footer_description': 'La opción inteligente para tus proyectos y el crecimiento de tu empresa.'
+            'footer_description': 'La opción inteligente para tus proyectos y el crecimiento de tu empresa.',
+            'footer_services': 'Servicios',
+            'footer_company': 'Empresa',
+            'footer_contact': 'Contacto',
+            'footer_metal_structures': 'Estructuras Metálicas',
+            'footer_forklifts': 'Montacargas',
+            'footer_genie_platforms': 'Plataformas Genie',
+            'footer_industrial_maintenance': 'Mantenimiento Industrial',
+            'footer_civil_works': 'Obra Civil',
+            'footer_electromechanical': 'Electromecánica',
+            'footer_about': 'Nosotros',
+            'footer_contact_link': 'Contacto',
+            'footer_location': 'Área Metropolitana, N.L.'
         },
         en: {
             // Navigation
@@ -947,7 +959,19 @@ document.addEventListener('DOMContentLoaded', function() {
             'copyright': 'All rights reserved.',
             'privacy': 'Privacy Policy',
             'terms': 'Terms and Conditions',
-            'footer_description': 'The intelligent option for your projects and your company\'s growth.'
+            'footer_description': 'The intelligent option for your projects and your company\'s growth.',
+            'footer_services': 'Services',
+            'footer_company': 'Company',
+            'footer_contact': 'Contact',
+            'footer_metal_structures': 'Metal Structures',
+            'footer_forklifts': 'Forklifts',
+            'footer_genie_platforms': 'Genie Platforms',
+            'footer_industrial_maintenance': 'Industrial Maintenance',
+            'footer_civil_works': 'Civil Works',
+            'footer_electromechanical': 'Electromechanical',
+            'footer_about': 'About',
+            'footer_contact_link': 'Contact',
+            'footer_location': 'Metropolitan Area, N.L.'
         },
         ko: {
             // 네비게이션
@@ -1117,7 +1141,19 @@ document.addEventListener('DOMContentLoaded', function() {
             'copyright': '모든 권리 보유.',
             'privacy': '개인정보처리방침',
             'terms': '이용약관',
-            'footer_description': '프로젝트와 회사 성장을 위한 지능형 옵션.'
+            'footer_description': '프로젝트와 회사 성장을 위한 지능형 옵션.',
+            'footer_services': '서비스',
+            'footer_company': '회사',
+            'footer_contact': '연락처',
+            'footer_metal_structures': '금속 구조물',
+            'footer_forklifts': '지게차',
+            'footer_genie_platforms': '지니 플랫폼',
+            'footer_industrial_maintenance': '산업 유지보수',
+            'footer_civil_works': '토목 공사',
+            'footer_electromechanical': '전기기계',
+            'footer_about': '회사소개',
+            'footer_contact_link': '연락처',
+            'footer_location': '대도시권, 누에보 레온'
         }
     };
     
@@ -1238,10 +1274,17 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Actualizar sección de servicios
         const servicesTitle = document.querySelector('#servicios .services-main-title .services-title-line');
+        const servicesTitleAccent = document.querySelector('#servicios .services-main-title .services-title-accent');
         const servicesSubtitle = document.querySelector('#servicios .services-description');
         const serviceStats = document.querySelectorAll('.service-stat .stat-label');
         
-        if (servicesTitle) servicesTitle.textContent = currentLang.services_title.split(' ')[0];
+        if (servicesTitle) {
+            const titleWords = currentLang.services_title.split(' ');
+            servicesTitle.textContent = titleWords[0];
+            if (servicesTitleAccent && titleWords.length > 1) {
+                servicesTitleAccent.textContent = titleWords.slice(1).join(' ');
+            }
+        }
         if (servicesSubtitle) servicesSubtitle.textContent = currentLang.services_subtitle;
         
         if (serviceStats[0]) serviceStats[0].textContent = currentLang.specialized_services;
@@ -1270,16 +1313,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateContactSection(currentLang);
         
         // Actualizar footer
-        const copyright = document.querySelector('.footer-bottom p');
-        if (copyright) {
-            copyright.innerHTML = `&copy; 2023 J&A KOREA S.A. de C.V. ${currentLang.copyright}`;
-        }
-        
-        const privacyLink = document.querySelector('.footer-links a:first-child');
-        const termsLink = document.querySelector('.footer-links a:last-child');
-        
-        if (privacyLink) privacyLink.textContent = currentLang.privacy;
-        if (termsLink) termsLink.textContent = currentLang.terms;
+        updateFooter(currentLang);
     }
     
     // Función para actualizar tarjetas de servicios
@@ -1500,6 +1534,49 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const submitButton = document.querySelector('#contactForm button[type="submit"]');
         if (submitButton) submitButton.textContent = currentLang.send_message;
+    }
+    
+    // Función para actualizar footer completo
+    function updateFooter(currentLang) {
+        // Copyright
+        const copyright = document.querySelector('.footer-bottom p');
+        if (copyright) {
+            copyright.innerHTML = `&copy; 2023 J&A KOREA S.A. de C.V. ${currentLang.copyright}`;
+        }
+        
+        // Enlaces legales
+        const privacyLink = document.querySelector('.footer-links a:first-child');
+        const termsLink = document.querySelector('.footer-links a:last-child');
+        
+        if (privacyLink) privacyLink.textContent = currentLang.privacy;
+        if (termsLink) termsLink.textContent = currentLang.terms;
+        
+        // Secciones del footer
+        const footerSections = document.querySelectorAll('.footer-section h4');
+        if (footerSections[0]) footerSections[0].textContent = currentLang.footer_services;
+        if (footerSections[1]) footerSections[1].textContent = currentLang.footer_company;
+        if (footerSections[2]) footerSections[2].textContent = currentLang.footer_contact;
+        
+        // Enlaces de servicios
+        const serviceLinks = document.querySelectorAll('.footer-section:nth-child(2) ul li a');
+        if (serviceLinks[0]) serviceLinks[0].textContent = currentLang.footer_metal_structures;
+        if (serviceLinks[1]) serviceLinks[1].textContent = currentLang.footer_forklifts;
+        if (serviceLinks[2]) serviceLinks[2].textContent = currentLang.footer_genie_platforms;
+        if (serviceLinks[3]) serviceLinks[3].textContent = currentLang.footer_industrial_maintenance;
+        if (serviceLinks[4]) serviceLinks[4].textContent = currentLang.footer_civil_works;
+        if (serviceLinks[5]) serviceLinks[5].textContent = currentLang.footer_electromechanical;
+        
+        // Enlaces de empresa
+        const companyLinks = document.querySelectorAll('.footer-section:nth-child(3) ul li a');
+        if (companyLinks[0]) companyLinks[0].textContent = currentLang.footer_about;
+        if (companyLinks[1]) companyLinks[1].textContent = currentLang.footer_contact_link;
+        
+        // Información de contacto
+        const contactInfo = document.querySelectorAll('.footer-section:nth-child(4) p');
+        if (contactInfo[0]) {
+            contactInfo[0].innerHTML = `<i class="fas fa-map-marker-alt"></i> ${currentLang.footer_location}`;
+        }
+        // Los números de teléfono y email se mantienen igual
     }
     
     // Cargar idioma preferido al cargar la página
