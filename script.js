@@ -620,7 +620,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Hero
             'hero_title_1': 'La opción inteligente',
             'hero_title_2': 'para tus proyectos',
-            'hero_title_3': 'Nuevo León',
             'hero_subtitle_1': 'en todo',
             'hero_subtitle_2': 'México y el extranjero',
             'hero_description': 'Especialistas en fabricación e instalación de estructuras metálicas, conveyors, mantenimiento industrial, servicios de ingeniería, renta y venta de maquinaria pesada y maniobras.',
@@ -800,9 +799,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'contacto': 'Contact',
             
             // Hero
-            'hero_title_1': 'Comprehensive Services',
-            'hero_title_2': 'in the state of',
-            'hero_title_3': 'Nuevo León',
+            'hero_title_1': 'The Smart Option',
+            'hero_title_2': 'for your projects',
             'hero_subtitle_1': 'throughout',
             'hero_subtitle_2': 'Mexico and abroad',
             'hero_description': 'Specialists in manufacturing and installation of metal structures, conveyors, industrial maintenance, engineering services, rental and sale of heavy machinery and maneuvers.',
@@ -982,9 +980,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'contacto': '연락처',
             
             // 히어로
-            'hero_title_1': '종합 서비스',
-            'hero_title_2': '누에보 레온 주에서',
-            'hero_title_3': '누에보 레온',
+            'hero_title_1': '스마트 옵션',
+            'hero_title_2': '프로젝트를 위한',
             'hero_subtitle_1': '멕시코 전역과',
             'hero_subtitle_2': '해외에서',
             'hero_description': '금속 구조물 제조 및 설치, 컨베이어, 산업 유지보수, 엔지니어링 서비스, 중장비 임대 및 판매, 기동 작업 전문가.',
@@ -1190,7 +1187,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (heroTitle1) heroTitle1.textContent = currentLang.hero_title_1;
         if (heroTitle2) heroTitle2.textContent = currentLang.hero_title_2;
-        if (heroTitle3) heroTitle3.textContent = currentLang.hero_title_3;
+
         if (heroSubtitle1) heroSubtitle1.textContent = currentLang.hero_subtitle_1;
         if (heroSubtitle2) heroSubtitle2.textContent = currentLang.hero_subtitle_2;
         if (heroDescription) heroDescription.textContent = currentLang.hero_description;
