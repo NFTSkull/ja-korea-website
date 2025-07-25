@@ -689,6 +689,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'industrial_recruitment_desc': 'Encontramos el talento especializado que tu empresa necesita para crecer.',
             'industrial_parts': 'Venta de Refacciones Industriales',
             'industrial_parts_desc': 'Venta de refacciones y accesorios de equipo industrial desde cualquier parte del mundo.',
+            'personal_transport': 'Transporte de Personal',
+            'personal_transport_desc': 'Servicio de transporte especializado para personal industrial y ejecutivo.',
             
             // Características de servicios
             'structure_fabrication': 'Fabricación de estructuras',
@@ -731,6 +733,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'equipment_accessories': 'Accesorios de equipos',
             'worldwide_shipping': 'Envío desde cualquier parte del mundo',
             'complete_catalog': 'Catálogo completo de repuestos',
+            'industrial_personnel_transport': 'Transporte de personal industrial',
+            'executive_service': 'Servicio ejecutivo',
+            'custom_routes': 'Rutas personalizadas',
+            'flexible_hours': 'Horarios flexibles',
             
             // Equipos
             'equipment_rental_sales': 'Renta y Venta de Equipos',
@@ -870,6 +876,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'industrial_recruitment_desc': 'We find the specialized talent your company needs to grow.',
             'industrial_parts': 'Industrial Parts Sales',
             'industrial_parts_desc': 'Sale of industrial equipment parts and accessories from anywhere in the world.',
+            'personal_transport': 'Personal Transport',
+            'personal_transport_desc': 'Specialized transportation service for industrial and executive personnel.',
             
             // Service Features
             'structure_fabrication': 'Structure fabrication',
@@ -912,6 +920,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'equipment_accessories': 'Equipment accessories',
             'worldwide_shipping': 'Shipping from anywhere in the world',
             'complete_catalog': 'Complete spare parts catalog',
+            'industrial_personnel_transport': 'Industrial personnel transport',
+            'executive_service': 'Executive service',
+            'custom_routes': 'Custom routes',
+            'flexible_hours': 'Flexible hours',
             
             // Equipment
             'equipment_rental_sales': 'Equipment Rental and Sales',
@@ -1051,6 +1063,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'industrial_recruitment_desc': '회사 성장에 필요한 전문 인재를 찾아드립니다.',
             'industrial_parts': '산업 부품 판매',
             'industrial_parts_desc': '세계 어디서나 산업 장비 부품 및 액세서리 판매.',
+            'personal_transport': '인력 운송',
+            'personal_transport_desc': '산업 및 경영진을 위한 전문 운송 서비스.',
             
             // 서비스 특징
             'structure_fabrication': '구조물 제조',
@@ -1093,6 +1107,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'equipment_accessories': '장비 액세서리',
             'worldwide_shipping': '세계 어디서나 배송',
             'complete_catalog': '완전한 예비 부품 카탈로그',
+            'industrial_personnel_transport': '산업 인력 운송',
+            'executive_service': '경영진 서비스',
+            'custom_routes': '맞춤형 경로',
+            'flexible_hours': '유연한 시간',
             
             // 장비
             'equipment_rental_sales': '장비 임대 및 판매',
@@ -1333,7 +1351,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 { title: currentLang.specialized_maintenance, desc: currentLang.specialized_maintenance_desc },
                 { title: currentLang.global_services, desc: currentLang.global_services_desc },
                 { title: currentLang.industrial_recruitment, desc: currentLang.industrial_recruitment_desc },
-                { title: currentLang.industrial_parts, desc: currentLang.industrial_parts_desc }
+                { title: currentLang.industrial_parts, desc: currentLang.industrial_parts_desc },
+                { title: currentLang.personal_transport, desc: currentLang.personal_transport_desc }
             ];
             
             if (serviceMap[index]) {
@@ -1371,7 +1390,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Reclutamiento Industrial
             [currentLang.technical_recruitment, currentLang.engineer_selection, currentLang.operational_personnel, currentLang.hr_consulting],
             // Venta de Refacciones
-            [currentLang.industrial_parts, currentLang.equipment_accessories, currentLang.worldwide_shipping, currentLang.complete_catalog]
+            [currentLang.industrial_parts, currentLang.equipment_accessories, currentLang.worldwide_shipping, currentLang.complete_catalog],
+            // Transporte de Personal
+            [currentLang.industrial_personnel_transport, currentLang.executive_service, currentLang.custom_routes, currentLang.flexible_hours]
         ];
         
         if (serviceFeatures[serviceIndex]) {
