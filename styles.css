@@ -298,12 +298,20 @@ body {
     position: relative;
 }
 
+.hero-main-title h1 {
+    margin-bottom: 0.5rem;
+}
+
+.hero-main-title h1:last-child {
+    margin-bottom: 0;
+}
+
 .hero-title-primary {
     font-size: clamp(3.5rem, 7vw, 6rem);
     font-weight: 900;
     color: var(--accent-color) !important;
     margin: 0;
-    line-height: 0.85;
+    line-height: 1.1;
     text-shadow: 
         0 6px 12px rgba(0, 0, 0, 0.4),
         0 0 20px rgba(245, 158, 11, 0.6),
@@ -319,7 +327,7 @@ body {
     font-weight: 800;
     color: var(--accent-color) !important;
     margin: 0;
-    line-height: 0.85;
+    line-height: 1.1;
     text-shadow: 
         0 4px 8px rgba(0, 0, 0, 0.3),
         0 0 20px rgba(245, 158, 11, 0.6),
