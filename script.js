@@ -618,8 +618,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'contacto': 'Contacto',
             
             // Hero
-            'hero_title_1': 'Servicios integrales',
-            'hero_title_2': 'en el estado de',
+            'hero_title_1': 'La opción inteligente',
+            'hero_title_2': 'para tus proyectos',
             'hero_title_3': 'Nuevo León',
             'hero_subtitle_1': 'en todo',
             'hero_subtitle_2': 'México y el extranjero',
