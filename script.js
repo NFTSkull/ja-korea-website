@@ -1540,7 +1540,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (formInputs[1]) formInputs[1].placeholder = currentLang.email_address;
         if (formInputs[2]) formInputs[2].placeholder = currentLang.phone_number;
         if (formInputs[3]) {
-            formInputs[3].innerHTML = `<option value="">${currentLang.select_service}</option>`;
+            const select = formInputs[3];
+            const firstOption = select.querySelector('option[value=""]');
+            if (firstOption) {
+                firstOption.textContent = currentLang.select_service;
+            }
         }
         if (formInputs[4]) formInputs[4].placeholder = currentLang.describe_project;
         
