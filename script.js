@@ -1351,7 +1351,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 { title: currentLang.specialized_maintenance, desc: currentLang.specialized_maintenance_desc },
                 { title: currentLang.global_services, desc: currentLang.global_services_desc },
                 { title: currentLang.industrial_recruitment, desc: currentLang.industrial_recruitment_desc },
-                { title: currentLang.industrial_parts, desc: currentLang.industrial_parts_desc },
                 { title: currentLang.personal_transport, desc: currentLang.personal_transport_desc }
             ];
             
@@ -1389,8 +1388,6 @@ document.addEventListener('DOMContentLoaded', function() {
             [currentLang.worldwide_service, currentLang.foreign_business, currentLang.international_logistics, currentLang.global_consulting],
             // Reclutamiento Industrial
             [currentLang.technical_recruitment, currentLang.engineer_selection, currentLang.operational_personnel, currentLang.hr_consulting],
-            // Venta de Refacciones
-            [currentLang.industrial_parts, currentLang.equipment_accessories, currentLang.worldwide_shipping, currentLang.complete_catalog],
             // Transporte de Personal
             [currentLang.industrial_personnel_transport, currentLang.executive_service, currentLang.custom_routes, currentLang.flexible_hours]
         ];
