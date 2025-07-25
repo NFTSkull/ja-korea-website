@@ -1598,4 +1598,46 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Hacer función global
     window.changeLanguage = changeLanguage;
+    
+    // Función para enviar formulario a WhatsApp
+    function enviarWhatsApp(event) {
+        event.preventDefault();
+        
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const telefono = document.getElementById('telefono').value;
+        const servicio = document.getElementById('servicio');
+        const mensaje = document.getElementById('mensaje').value;
+        
+        if (!nombre || !email || !telefono || !servicio.value || !mensaje) {
+            alert('Por favor, completa todos los campos del formulario.');
+            return;
+        }
+        
+        const servicioSeleccionado = servicio.options[servicio.selectedIndex].text;
+        
+        const mensajeWhatsApp = `*Nueva Consulta - J&A KOREA S.A. de C.V.*
+
+*Información del Cliente:*
+👤 *Nombre:* ${nombre}
+📧 *Email:* ${email}
+📱 *Teléfono:* ${telefono}
+
+*Servicio Solicitado:*
+🔧 *Servicio:* ${servicioSeleccionado}
+
+*Mensaje:*
+${mensaje}
+
+---
+*Enviado desde el sitio web de J&A KOREA S.A. de C.V.*`;
+        
+        const numeroWhatsApp = '528134073951';
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
+        
+        window.open(urlWhatsApp, '_blank');
+    }
+    
+    // Hacer función global
+    window.enviarWhatsApp = enviarWhatsApp;
 }); 

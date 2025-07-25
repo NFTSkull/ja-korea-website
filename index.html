@@ -659,18 +659,30 @@
                         <div class="form-group">
                             <select id="servicio" name="servicio" required>
                                 <option value="">Selecciona un servicio</option>
-                                <option value="estructuras-metalicas">Estructuras Metálicas</option>
-                                <option value="montacargas">Montacargas (Renta, Venta y Maniobras)</option>
-                                <option value="plataformas-genie">Plataformas Genie</option>
-                                <option value="mantenimiento-industrial">Mantenimiento Industrial (Dollys y Maquinaria)</option>
-                                <option value="obra-civil">Obra Civil</option>
-                                <option value="electromecanica">Electromecánica</option>
+                                <optgroup label="Nuestros Servicios">
+                                    <option value="estructuras-metalicas">Estructuras Metálicas</option>
+                                    <option value="montacargas">Montacargas</option>
+                                    <option value="plataformas-genie">Plataformas Genie</option>
+                                    <option value="mantenimiento-industrial">Mantenimiento Industrial</option>
+                                    <option value="obra-civil">Obra Civil</option>
+                                    <option value="electromecanica">Electromecánica</option>
+                                    <option value="mantenimiento-especializado">Mantenimiento Especializado</option>
+                                    <option value="servicios-globales">Servicios Globales</option>
+                                    <option value="reclutamiento-industrial">Reclutamiento Industrial</option>
+                                    <option value="venta-refacciones">Venta de Refacciones Industriales</option>
+                                    <option value="transporte-personal">Transporte de Personal</option>
+                                </optgroup>
+                                <optgroup label="Renta y Venta de Equipos">
+                                    <option value="montacargas-renta">Montacargas (Renta/Venta)</option>
+                                    <option value="plataformas-genie-renta">Plataformas Genie (Renta/Venta)</option>
+                                    <option value="mantenimiento-equipos">Mantenimiento de Equipos</option>
+                                </optgroup>
                             </select>
                         </div>
                         <div class="form-group">
                             <textarea id="mensaje" name="mensaje" placeholder="Describe tu proyecto o consulta" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-primary" onclick="enviarWhatsApp(event)">Enviar por WhatsApp</button>
                     </form>
                 </div>
             </div>
