@@ -664,7 +664,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Servicios
             'services_title': 'Nuestros Servicios',
-            'services_subtitle': 'Soluciones integrales para todas tus necesidades industriales',
+            'services_subtitle': 'La opción inteligente para tus proyectos',
             'specialized_services': 'Servicios Especializados',
             'completed_projects': 'Proyectos Realizados',
             'response_hours': 'Horas de Respuesta',
